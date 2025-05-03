@@ -1,0 +1,19 @@
+├── public/
+│   ├── index.html         # Main HTML file
+│   └── favicon.ico        # Favicon
+├── src/
+│   ├── assets/            # Images, fonts, and other static files
+│   ├── components/        # Reusable UI components
+│   ├── hooks/             # Custom hooks
+│   ├── layouts/           # Main layout
+│   ├── pages/             # Page components for routing
+│   ├── services/          # API calls and service functions
+│   ├── styles/            # Global styles and theme files
+│   ├── utils/             # Utility functions
+│   ├── App.jsx            # Main application component
+│   ├── main.jsx           # Entry point for Vite
+│   └── routes/            # Route configurations
+├── .gitignore              # Git ignore file
+├── index.html              # Vite entry HTML
+├── package.json            # Project dependencies and scripts
+└── README.md               # Project documentation
