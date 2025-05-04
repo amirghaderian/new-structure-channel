@@ -110,6 +110,7 @@ const Login = () => {
                     variant="standard"
                     fullWidth
                     margin="normal"
+                    placeholder="ایمیل خود را وارد کنید"
                     {...register("email", { required: "ایمیل الزامی است" })}
                     error={!!errors.email}
                     helperText={errors.email?.message}
@@ -139,6 +140,7 @@ const Login = () => {
                     type={showPassword ? "text" : "password"}
                     variant="standard"
                     fullWidth
+                    placeholder="رمز عبور خود را وارد کنید"
                     margin="normal"
                     {...register("password", {
                       required: "رمز عبور الزامی است",

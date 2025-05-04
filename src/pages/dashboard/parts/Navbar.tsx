@@ -1,7 +1,9 @@
-import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import { AppBar, Box, Toolbar } from "@mui/material";
 import { Menu as MenuIcon, Person as PersonIcon } from "@mui/icons-material";
 import { IconButton } from "@mui/material";
+import { useApp } from "../../../context";
 const Navbar = () => {
+  const { setIsSidebarOpen } = useApp();
   return (
     <AppBar
       position="static"
@@ -23,7 +25,7 @@ const Navbar = () => {
         <Box sx={{ flexGrow: 1 }} />
         <Box sx={{ display: "flex", alignItems: "center" }}>
           <PersonIcon sx={{ ml: 1 }} />
-          <Typography>{currentUser?.name || "کاربر"}</Typography>
+          {/* <Typography>{currentUser?.name || "کاربر"}</Typography> */}
         </Box>
       </Toolbar>
     </AppBar>
